@@ -1,22 +1,43 @@
-// DSA_mini_proj2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// DSA MINI PROJECT BY FAITH AND KARYL
+//TOPIC 1 
 
 #include <iostream>
-#include <fstream>
+#include <queue>
+#include <stack>
+#include <list>
+#include <vector>
+
 using namespace std;
 
-int main()
-{
-    cout << "Hello World!\n";
+int main() {
+	queue<int> package2kg, package3kg;
+	int num2, num3;
+	int package2 = 0, package3 = 0;
+
+	cout << "Number of 2kg: ";
+	cin >> num2;
+
+	for (int i = 0; i < num2; i++) {
+		package2kg.push(2);
+		cout << package2kg.front() << "kg" << "\t";
+		package2 += 2;
+	}
+
+	cout << endl << "Size 2kg: " << package2kg.size();
+	cout << endl << "total 2kg:" << package2;
+
+
+	cout << endl << "Number of 3kg: ";
+	cin >> num3;
+
+	for (int i = 0; i < num3; i++) {
+		package3kg.push(3);
+		cout << package3kg.front() << "\t";
+		package3 += 3;
+	}
+
+	cout << endl << "Size 3kg: " << package3kg.size();
+	cout << endl << "total 3kg:" << package3;
+
+	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errorssdfdsfsf
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
